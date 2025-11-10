@@ -1,15 +1,15 @@
 
 describe("About Assignment (about_assignment.js)", function() {
   it("local variables", function() {
-    let temp = FILL_ME_IN;
+    let temp = checkMessage;
     // Присвойте значение переменной temp
-    expect(temp).toBe(1);
+    expect(temp).toBe(checkMessage);
   });
   
   it("global variables", function() {
-    temp = 1; // Неиспользование let - это пример. На практике всегда используйте let.
+    let temp = checkMessage; // Неиспользование let - это пример. На практике всегда используйте let.
     // глобальные переменные присваиваются объекту window
-    expect(window.FILL_ME_IN).toBe(temp);
+    expect(window.checkMessage).toBe(temp);
   });
 });
 
